@@ -53,6 +53,16 @@ body {
     font-weight: bold;
     letter-spacing: 0.15em;
   }
+  
+  hr.article-end.top {
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+  
+  hr.article-end.bottom {
+    margin-top: 3px;
+    border-top: 3px solid rgba(0,0,0,0.2);
+  }
 }
 
 article {
