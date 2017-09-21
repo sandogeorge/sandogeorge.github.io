@@ -21,7 +21,9 @@ layout: default
       {% for category in categories %}
       <h3>{{ category | first }}</h3>
       <p>{% for posts in category %} {% for post in posts %}
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>{% if forloop.last == false %},&nbsp;&nbsp;{% endif %}
+            {% if post.url %}
+            {{forloop.index}}. <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>{% if forloop.last == false %},&nbsp;&nbsp;{% endif %}
+            {% endif %}
         {% endfor %} {% endfor %}  </p>
       {% endfor %}
     </div>
