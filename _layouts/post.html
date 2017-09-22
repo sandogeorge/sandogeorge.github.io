@@ -23,18 +23,25 @@ layout: default
 
         {% if page.comments %}
         <h2>Leave a comment</h2>
+        <p>Do you have a question or comment? You may use the form below to join the conversation.</p>
+        <p>Note that your comment might take a few minutes to appear on the thread.</p>
+        <p>Thanks for participating.</p>
+        
         <form method="POST" action="https://api.staticman.net/v2/entry/{{ site.github_uname }}/{{ site.github_repo }}/{{ site.github_branch }}/comments">
           <div class="form-group">
             <label for="comment-message">Comment</label>
             <textarea id="comment-message" name="fields[message]" class="form-control" rows="5"></textarea>
+            <small id="comment-messageHelp" class="form-text text-muted">Markdown syntax is supported.</small>
           </div>
           <div class="form-group">
             <label for="comment-name">Name</label>
             <input type="text" id="comment-name" name="fields[name]" class="form-control" />
+            <small id="comment-nameHelp" class="form-text text-muted">This name will appear on the comment.</small>
           </div>
           <div class="form-group">
             <label for="comment-email">Email</label>
             <input type="email" id="comment-email" name="fields[email]" class="form-control" />
+            <small id="comment-emailHelp" class="form-text text-muted">This value is hashed before storage and will never be shown publicly.</small>
           </div>
           
           <div class="form-group" style="display: none;">
