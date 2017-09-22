@@ -5,6 +5,7 @@ date: 2017-09-21 13:35
 comments: true
 external-url: 
 categories: Computing
+project: Orchestra
 ---
 
 >Orchestra is a platform for [mobile crowdsensing][1]{:target="_blank"} that aims to be **generic**, allowing arbitrary crowdsensing scenarios, and **online adaptive**, allowing sensing task specifications to be adjusted without taking the system down. This post provides an overview of my motivation for starting the project and the work that has been done thus far.
