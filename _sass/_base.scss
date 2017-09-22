@@ -55,11 +55,13 @@ body {
   }
   
   hr.article-end.top {
+    width: 100%;
     margin-bottom: 0;
     border-top: 1px solid rgba(0,0,0,0.2);
   }
   
   hr.article-end.bottom {
+    width: 100%;
     margin-top: 3px;
     border-top: 3px solid rgba(0,0,0,0.2);
   }
@@ -142,6 +144,23 @@ blockquote {
   padding: 16px;
   border-radius: 4px;
   border-top: 3px solid #000;
+}
+
+.comment {
+  .details {
+    .name {
+      display: block;
+      width:100%;
+      font-weight: bold;
+    }
+    
+    .time {
+      display: block;
+      width:100%;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .small-ornament, .big-ornament {
