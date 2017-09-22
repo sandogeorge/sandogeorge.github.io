@@ -46,7 +46,7 @@ layout: default
           
           <div class="form-group" style="display: none;">
             <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}" />
-            <input name="options[slug]" type="hidden" value="{{ page.slug }}" />
+            <input name="options[slug]" type="hidden" value="{{ page.date | date: '%Y-%m-%d' }}-{{ page.slug }}" />
             
             <label for="comment-remarks">:)</label>
             <input id="comment-remarks" name="fields[hidden]" class="form-control" />

@@ -3,7 +3,6 @@ layout: post
 title: Orchestra - A Platform for Mobile Crowdsensing
 date: 2017-09-21 13:35
 comments: true
-external-url: 
 categories: Computing
 project: Orchestra
 ---
