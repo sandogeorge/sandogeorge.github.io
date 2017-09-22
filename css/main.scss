@@ -13,13 +13,15 @@ $mono-font-family: 'Source Code Pro', Menlo, Monaco, Inconsolata;
 
 $text-color:       hsl(0, 0%, 25%);
 
-$alt-color:        hsl(0, 70%, 46%);
+//$alt-color:        hsl(0, 70%, 46%);
+$alt-color:        #365899;
 $alt-color-darker: darken($alt-color, 6%);
 
 $article-bg-color: hsl(35, 36%, 95%);
 $background-color: darken($article-bg-color, 6%);
 $bg-color-darker:  darken($article-bg-color, 15%);
-$alt-text-color:   darken($article-bg-color, 60%);
+//$alt-text-color:   darken($article-bg-color, 60%);
+$alt-text-color:   #000;
 
 $subdued-border:   rgba($bg-color-darker, 0.5);
 
