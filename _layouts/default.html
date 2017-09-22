@@ -3,11 +3,14 @@
   {% include head.html %}
   <body>
     <div class="container nav">
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/research">Research</a></li>
-        <li><a href="/assets/Sando_George-CV.pdf">CV</a></li>
-    </ul>
+      <div class="col-md-1"></div>
+      <div class="col-md-8 offset-md-1">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/research">Research</a></li>
+            <li><a href="/assets/Sando_George-CV.pdf">CV</a></li>
+        </ul>
+      </div>
     </div>
     {{ content }}
     {% include footer.html %}
