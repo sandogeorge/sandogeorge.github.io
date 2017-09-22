@@ -23,7 +23,7 @@ layout: default
 
         {% if page.comments %}
         <h2>Leave a comment</h2>
-        <form method="POST" action="https://api.staticman.net/v2/entry/{{ site.github_uname }}/{{ site.github_repo }}/{{ site.github_branch }}">
+        <form method="POST" action="https://api.staticman.net/v2/entry/{{ site.github_uname }}/{{ site.github_repo }}/{{ site.github_branch }}/comments">
           <div class="form-group">
             <label for="comment-message">Comment</label>
             <textarea id="comment-message" name="fields[message]" class="form-control" rows="5"></textarea>
