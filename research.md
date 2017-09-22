@@ -14,7 +14,9 @@ title: Research
   <div class="col-md-1"></div>
   <div class="col-md-8 offset-md-1">
   <div markdown="1">
-  This is a **test**.
+  My research interests include multiagent systems, mobile computing, cloud applications architecture, embedded linux systems, topological data analysis and catastrophe theory. With the exception of cloud applications architecture, they all stem from courses completed during my master's studies at the Faculty of Mathematics and Information Science, Warsaw University of Technology. I developed an interest in cloud applications becuase of my experience developing such applications as a freelance developer.
+  
+  The blog posts listed below are grouped by the research projects they belong to:
   </div>
     
   {% assign projects = site.posts | group_by: "project" %}
