@@ -59,8 +59,8 @@ layout: default
         <hr class="article-end bottom" />
         {% endif %}
         
+        {% if site.data.comments[page.slug].size > 0 %}
         {% assign comments = site.data.comments[page.slug] | sort %}
-        {% if comments.size > 0 %}
         {% for comment in comments %}
         <div id="comment-{{ comment[1]._id }}" class="comment col-md-12">
           <div class="avatar col-md-1">
