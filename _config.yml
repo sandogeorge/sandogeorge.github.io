@@ -1,25 +1,64 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
 # Site settings
-title: "Life, Computing and Mathematics"
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: "Where do all the thoughts go &#8253;"
+subtitle: "I don’t have much to talk about. But what I do have to talk about, I will talk about here."
+description: ""
 author: "Sando George"
-description: "A blog to document my thoughts on issues related to my research interests and life in general."
-keywords: "Life, Computing, Mathematics, Mobile Computing, Multiagent Systems, Topological Data Analysis"
-biography: "I am an aspiring computer scientist with interests in multiagent systems, mobile computing, cloud applications architecture, embedded linux systems, topological data analysis and catastrophe theory."
-colophon: "by Sando George.<br>Content available under <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/' target='_blank'>Creative Commons (BY-NC-SA)</a> unless otherwise noted.<br>This site is hosted at <a href='https://pages.github.com/' target='_blank'>Github Pages</a> and created with <a href='http://jekyllrb.com/' target='_blank'>Jekyll</a> (adapted from Papyrus theme by <a href='http://hugosereno.eu/' target='_blank'>Hugo Sereno Ferreira</a>)."
-
+colophon: "Sando George"
 baseurl: ""
-url: "http://sandogeorge.github.io"
-
-twitter_username: sandogee
-github_username: sandogeorge
+url: "https://sandogeorge.github.io"
 linkedin_username: sandogeorge
-facebook_username: 
-google-analytics: 
+github_username: sandogeorge
 
-simple_search: http://google.com/search
+google_analytics: UA-115515578-1
+
 markdown: kramdown
 highlighter: rouge
 permalink: /blog/:year/:month/:day/:title/
 
-github_uname: sandogeorge
-github_repo: sandogeorge.github.io
-github_branch: master
+staticman_github_uname: sandogeorge
+staticman_github_repo: sandogeorge.github.io
+staticman_github_branch: master
+
+# Build settings
+# theme: minima
+plugins:
+ - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

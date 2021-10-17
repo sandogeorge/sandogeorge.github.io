@@ -1,21 +1,17 @@
 <footer>
-  <div class="container">
-    <!--<div class="row biography">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-4">
-        <h2>who am i</h2>
-        <p>{{ site.biography }}</p>
-      </div>
-      <div class="col-sm-4">
-        <h2>what is this</h2>
-        <p>{{ site.description }}</p>
-      </div>
-      <div class="col-sm-2"></div>
-    </div>-->
-    {% if site.colophon %}
-    <div class="row copyright">
-      <center>&copy; {{ site.time | date: "%Y"}} {{ site.colophon }}</center>
+    <div class="flex_container">
+        <div class="flex_spacer"></div>
+        <div class="flex_content">
+            <div>
+                <center>
+                    <p>&copy; {{ site.time | date: "%Y"}} {{ site.colophon }}.</p>
+                </center>     
+                <center>
+                    <p>Content available under <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' target='_blank'>Creative Commons (BY-NC-SA)</a> unless otherwise noted.</p>
+                    <p>This site is hosted at <a href='https://pages.github.com/' target='_blank'>Github Pages</a> and created with <a href='https://jekyllrb.com/' target='_blank'>Jekyll</a>.</p>
+                </center>
+            </div>
+        </div>
+        <div class="flex_spacer"></div>
     </div>
-    {% endif %}
-  </div>
 </footer>
