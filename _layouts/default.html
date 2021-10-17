@@ -1,25 +1,29 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   {% include head.html %}
   <body>
-    <div class="container nav">
-      <div class="col-md-1"></div>
-      <div class="col-md-8 offset-md-1">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/research">Research</a></li>
-            <li><a href="https://github.com/sandogeorge" target="_blank">Github</a></li>
-            <li>
-              <a
-                href="https://scholar.google.com/citations?user=XylDI7sAAAAJ&hl=en"
-                target="_blank"
-              >Google Scholar</a>
-            </li>
-            <li><a href="/assets/Sando_George-CV.pdf">CV</a></li>
-        </ul>
-      </div>
-    </div>
-    {{ content }}
-    {% include footer.html %}
+    <main role="main">
+        <nav>
+            <div class="flex_container">
+                <div class="flex_spacer"></div>
+                <div class="flex_content">
+                    <div class="site">
+                        <a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+                        <a href="/research" class="{% if page.url == '/research/' %}active{% endif %}">Research</a>
+                        <a href="/assets/docs/Sando_George-CV.pdf" target="_blank">CV</a>
+                    </div>
+                    <div class="social">
+                        <a class="fab fa-linkedin-in" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"></a>
+                        <a class="fab fa-github" href="https://github.com/{{ site.github_username }}" target="_blank"></a>
+                    </div>
+                </div>
+                <div class="flex_spacer"></div>
+            </div>
+        </nav>
+        <section class="main_content">
+            {{ content }}
+        </section> 
+        {% include footer.html %}
+    </main>
   </body>
 </html>
